@@ -2,7 +2,7 @@ venv/
 __pycache__/
 *.pyc
 .DS_Store
-.env
 .idea/
 gitignore.txt
 env.txt
+places_debug.py
