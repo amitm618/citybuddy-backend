@@ -35,7 +35,8 @@ def get_recommendations(
             "name": place.get("name"),
             "rating": place.get("rating"),
             "address": place.get("vicinity"),
-            "open_now": place.get("opening_hours", {}).get("open_now", "N/A")
+            "open_now": place.get("opening_hours", {}).get("open_now", "N/A"),
+            "user_ratings_total": place.get("user_ratings_total", 0)
         }
         for place in data.get("results", [])
     ]
